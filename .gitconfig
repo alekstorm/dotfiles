@@ -1,0 +1,43 @@
+[alias]
+	aa = add -A
+	ap = add -p
+	br = branch
+	df = diff
+	dfc = diff --cached
+	ci = commit
+	cia = commit --amend
+	cl = clone
+	co = checkout
+	cp = cherry-pick
+	cpc = cherry-pick --continue
+	ft = fetch
+	fto = fetch origin
+	ftu = fetch upstream
+	hl = help
+	mg = merge
+	ps = push
+	pso = push origin
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rs = reset
+	rsh = reset --hard
+	rss = reset --soft
+	rt = remote
+	rv = revert
+	sh = show
+	sp = stash pop
+	st = status -s
+	su = stash -u
+[core]
+	excludesfile = /Users/alek/.gitignore_global
+	editor = nano
+	autocrlf = false
+	filemode = false
+[user]
+	name = Alek Storm
+	email = alek.storm@gmail.com
+[merge]
+	conflictstyle = diff3
+[push]
+	default = upstream

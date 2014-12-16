@@ -1,0 +1,7 @@
+*
+!.bash_profile
+!.colors.sh
+!.git-prompt.sh
+!.gitconfig
+!.gitignore
+!.gitignore_global
