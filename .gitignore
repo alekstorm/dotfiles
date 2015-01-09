@@ -1,6 +1,7 @@
 *
 !.bash_profile
 !.colors.sh
+!.gdbinit
 !.git-prompt.sh
 !.gitconfig
 !.gitignore
