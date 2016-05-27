@@ -1,31 +1,46 @@
 [alias]
 	aa = add -A
 	ap = add -p
+	bl = blame
 	br = branch
-	df = diff
-	dfc = diff --cached
 	ci = commit
 	cia = commit --amend
 	cl = clone
 	co = checkout
+	com = checkout master
 	cp = cherry-pick
 	cpc = cherry-pick --continue
+	df = diff -w -M
+	dfc = diff -w -M --cached
+	dfs = diff -w -M --stat
+	dfcs = diff -w -M --cached --stat
 	ft = fetch
 	fto = fetch origin
 	ftu = fetch upstream
 	hl = help
+	lg = log -M --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit
 	mg = merge
+	mgom = merge origin/master
+	mgum = merge upstream/master
+	pl = pull
 	ps = push
-	pso = push origin
+	pso = push -u origin
+	psu = push -u upstream
 	rb = rebase
 	rba = rebase --abort
 	rbc = rebase --continue
+	rbom = rebase origin/master
+	rbum = rebase upstream/master
+	rp = rev-parse
+	rph = rev-parse HEAD
 	rs = reset
 	rsh = reset --hard
+	rshom = reset --hard origin/master
 	rss = reset --soft
 	rt = remote
 	rv = revert
-	sh = show
+	sh = show -w -M
+	shs = show -w -M --stat
 	sp = stash pop
 	st = status -s
 	su = stash -u
@@ -34,6 +49,7 @@
 	editor = nano
 	autocrlf = false
 	filemode = false
+	ignorecase = false
 [user]
 	name = Alek Storm
 	email = alek.storm@gmail.com
@@ -41,3 +57,9 @@
 	conflictstyle = diff3
 [push]
 	default = upstream
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
+[status]
+	relativePaths = false
