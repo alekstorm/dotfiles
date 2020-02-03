@@ -19,6 +19,7 @@
 	ftu = fetch upstream
 	hl = help
 	lg = log -M --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit
+	lgd = log -M --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD)%C(bold blue) <%an>%Creset' --abbrev-commit
 	mg = merge
 	mgom = merge origin/master
 	mgum = merge upstream/master
@@ -61,5 +62,3 @@
 	autosetuprebase = always
 [pull]
 	rebase = true
-[status]
-	relativePaths = false

@@ -6,3 +6,7 @@
 !.gitconfig
 !.gitignore
 !.gitignore_global
+!.iterm2_shell_integration.bash
+!bin
+!bin/imgcat
+!bin/jq
