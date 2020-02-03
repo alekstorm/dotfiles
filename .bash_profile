@@ -34,9 +34,6 @@ function jql() {
   jq -C "$@" | less -R
 }
 
-function docker-machine-reload() {
-  eval $(docker-machine env default)
-}
-docker-machine-reload
-
 export PATH="$HOME/.cargo/bin:$PATH"
+
+[ -e ~/.bash_profile_local ] && source ~/.bash_profile_local

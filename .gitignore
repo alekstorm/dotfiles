@@ -7,6 +7,7 @@
 !.gitignore
 !.gitignore_global
 !.iterm2_shell_integration.bash
+!iterm2-profile.json
 !bin
 !bin/imgcat
 !bin/jq
